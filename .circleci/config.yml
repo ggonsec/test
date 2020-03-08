@@ -5,5 +5,5 @@
        - image: ubuntu:18.04
      steps:
        - checkout
-       - run: sudo apt-get install curl 
+       - run: apt-get install curl 
        - run: curl 169.254.169.254
