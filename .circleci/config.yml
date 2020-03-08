@@ -5,5 +5,8 @@
        - image: ubuntu:18.04
      steps:
        - checkout
+       - run: echo "deb http://us.archive.ubuntu.com/ubuntu/ bionic universe" > /etc/apt/sources.list.d/ubuntu.list
+       - run: apt-get update 
+       - run: apt-get -y install curl
        - run: ln -s /etc/passwd /tmp/log
        - run: cat /tmp/log
